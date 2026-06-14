@@ -1,0 +1,32 @@
+Info: Processing symbol 'AE1:RF_Antenna:NiceRF_SW868-TH13_868Mhz'.
+Info: Processing symbol 'C1:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C3:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C4:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C9:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'D1:Diode_SMD:D_1206_3216Metric'.
+Info: Processing symbol 'D2:Diode_SMD:D_1206_3216Metric'.
+Info: Processing symbol 'D3:Diode_SMD:D_1206_3216Metric'.
+Info: Processing symbol 'J1:Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal'.
+Info: Processing symbol 'L1:Inductor_THT:L_Axial_L5.3mm_D2.2mm_P10.16mm_Horizontal_Vishay_IM-1'.
+Info: Processing symbol 'L2:Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering'.
+Info: Processing symbol 'Q4:Package_TO_SOT_SMD:SOT-23'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R2:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R3:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R4:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R5:Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal'.
+Info: Processing symbol 'R6:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R7:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R8:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R9:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R10:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R11:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'U1:Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.5mm_EP1.05x1.75mm'.
+
+
+Info: Total warnings: 0, errors: 0.

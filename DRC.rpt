@@ -1,0 +1,26 @@
+** Drc report for 433 MHz RF Modules.kicad_pcb **
+** Created on 2026-06-14T22:27:15+0530 **
+
+** Found 4 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2658 mm, 94.3000 mm): Rectangle on Edge.Cuts
+    @(180.4700 mm, 119.3000 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2658 mm, 94.3000 mm): Rectangle on Edge.Cuts
+    @(172.7300 mm, 116.6400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2658 mm, 94.3000 mm): Rectangle on Edge.Cuts
+    @(175.3300 mm, 116.6400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2658 mm, 94.3000 mm): Rectangle on Edge.Cuts
+    @(177.8700 mm, 116.6400 mm): Segment on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
