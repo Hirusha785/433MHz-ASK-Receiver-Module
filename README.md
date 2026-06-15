@@ -119,6 +119,87 @@ The LM358 operational amplifier stages amplify and condition the detected signal
 The output pin provides the recovered receiver signal for further processing.
 
 ---
+## 🧪 Testing Methods
+
+You can test this receiver module using:
+
+- Arduino
+- ESP32
+- STM32
+- Raspberry Pi Pico
+- Logic analyzer
+- Oscilloscope
+- 433MHz ASK transmitter
+- RF remote control transmitter
+
+Example testing flow:
+
+```text
+433MHz ASK Transmitter
+        ↓
+433MHz ASK Receiver Module
+        ↓
+Microcontroller GPIO
+        ↓
+Serial Monitor / Decoder Software
+```
+
+---
+
+## 🧑‍💻 Arduino Basic Test Code
+
+```cpp
+#define RF_DATA_PIN 2
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(RF_DATA_PIN, INPUT);
+}
+
+void loop() {
+  int rfSignal = digitalRead(RF_DATA_PIN);
+
+  Serial.println(rfSignal);
+
+  delay(10);
+}
+```
+
+---
+
+## 🧑‍💻 ESP32 Basic Test Code
+
+```cpp
+#define RF_DATA_PIN 27
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(RF_DATA_PIN, INPUT);
+}
+
+void loop() {
+  int signalState = digitalRead(RF_DATA_PIN);
+
+  Serial.println(signalState);
+
+  delay(10);
+}
+```
+
+---
+
+## 🔬 Oscilloscope Testing
+
+Recommended test points:
+
+| Test Point | Purpose |
+|---|---|
+| Antenna input | Check received RF activity |
+| Detector output | View detected ASK signal |
+| LM358 output | Check conditioned output signal |
+| DATA pin | Final receiver output |
+
+---
 
 ## 🖼️ Project Preview
 
@@ -133,7 +214,6 @@ The output pin provides the recovered receiver signal for further processing.
 ![PCB Layer](images/pcb-top.png)
 
 
-
 ### 3D PCB Render
 
 <img width="1144" height="696" alt="WhatsApp Image 2026-06-15 at 19 43 52" src="https://github.com/user-attachments/assets/27aa64b9-ad93-4360-a70a-96686ab94f4d" />
@@ -143,9 +223,21 @@ The output pin provides the recovered receiver signal for further processing.
 <img width="785" height="640" alt="image" src="https://github.com/user-attachments/assets/820fbe2b-9392-4768-923e-d3063c84d7d2" />
 <img width="1243" height="701" alt="image" src="https://github.com/user-attachments/assets/f00e4a3b-63d2-4f8f-bb4d-46961eab0350" />
 
-
-
 ![3D Render](images/3d-render.png)
+
+--- 
+
+## 🛠️ PCB Design Notes
+
+- Keep the antenna trace short.
+- Keep the RF input section away from noisy digital signals.
+- Use a clean ground reference.
+- Place decoupling capacitors close to the LM358 power pins.
+- Keep RF tuning components close to the antenna input.
+- Avoid sharp trace corners in the RF section.
+- Keep signal paths short where possible.
+- Use proper spacing between RF, analog, and output sections.
+- Test the board with real 433MHz transmitters before finalizing production.
 
 ---
 
@@ -172,6 +264,18 @@ This module is intended for:
 - Prototype development
 - Experimental wireless communication
 - Embedded hardware testing
+
+RF performance depends on:
+
+- PCB layout
+- Antenna design
+- Component tolerance
+- Power supply noise
+- Environmental interference
+- Transmitter power
+- Distance between transmitter and receiver
+
+This hardware should be tested and certified according to local RF regulations before any commercial deployment.
 
 ---
 
